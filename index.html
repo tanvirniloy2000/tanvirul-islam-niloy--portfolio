@@ -29,6 +29,14 @@ h3{font-size:1.2rem;margin:0 0 4px;letter-spacing:-.01em}
 .term .m{color:var(--acc)}
 .links a{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:8px 14px;margin:0 8px 8px 0;font-size:14px;color:var(--tx)}
 .links a:hover{border-color:var(--acc);text-decoration:none}
+.links a.cv-download{background:var(--acc);border-color:var(--acc);color:#081326;font-weight:700}
+.profile-head{display:flex;align-items:center;gap:22px;margin-bottom:18px}
+.profile-head h1{margin:0}
+.avatar-wrap{position:relative;flex:0 0 116px;width:116px;height:116px}
+.profile-photo,.avatar-fallback{display:block;width:116px;height:116px;border-radius:50%;border:3px solid var(--acc)}
+.profile-photo{object-fit:cover;object-position:center}
+.profile-photo[hidden],.avatar-fallback[hidden]{display:none!important}
+.avatar-fallback{display:grid;place-items:center;background:linear-gradient(140deg,#1d355b,#3468a6 58%,#6ea8ff);color:#fff;font-size:2rem;font-weight:750;letter-spacing:.04em}
 p{max-width:68ch}
 .tbl{overflow-x:auto}
 table{border-collapse:collapse;width:100%;min-width:680px;font-size:15px}
@@ -49,14 +57,20 @@ dd{margin:0;max-width:66ch}
 .fill{color:var(--fill);border-bottom:1px dashed var(--fill)}
 .badge{display:inline-block;font-size:13px;color:var(--learn);border:1px solid var(--learn);border-radius:99px;padding:1px 10px;margin-left:8px;vertical-align:middle;font-weight:400}
 footer{padding:50px 0 40px;color:var(--mut);font-size:13px}
-@media(max-width:560px){dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:12px}}
+@media(max-width:560px){dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:12px}.profile-head{gap:14px}.avatar-wrap,.profile-photo,.avatar-fallback{width:84px;height:84px;flex-basis:84px}.profile-head h1{font-size:clamp(1.75rem,8vw,2.5rem)}}
 </style>
 </head>
 <body>
 <nav><div class="w"><b>Tanvirul Islam Niloy</b><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#contact">Contact</a></div></nav>
 
 <header class="w" style="padding-top:72px">
-<h1>Tanvirul Islam Niloy</h1>
+<div class="profile-head">
+  <div class="avatar-wrap">
+    <img class="profile-photo" src="assets/profile.jpg" alt="Tanvirul Islam Niloy profile photo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+    <span class="avatar-fallback" hidden aria-hidden="true">TN</span>
+  </div>
+  <h1>Tanvirul Islam Niloy</h1>
+</div>
 <p class="lead">Network engineer, entry level. B.Sc. in Computer Science &amp; Engineering, CCNA in progress. I work through problems from the cable up, and I’m at home on Cisco IOS, MikroTik RouterOS and OLT consoles.</p>
 <pre class="term" aria-label="Troubleshooting method"><span class="m">$ diagnose --bottom-up</span>
  1  L1   link up, optics in range, no CRC or duplex errors
@@ -65,7 +79,7 @@ footer{padding:50px 0 40px;color:var(--mut);font-size:13px}
  4  L4   SYN, SYN-ACK, ACK completed, port reachable
  5  L7   DNS resolves, application responds
 <span class="m"># change one variable, verify, document</span></pre>
-<div class="links"><a href="mailto:niloytanvirulislam@gmail.com">Email</a><a href="https://www.linkedin.com/in/tanvirul-islam-niloy-4b432b2b1">LinkedIn</a><a href="https://github.com/tanvirniloy2000">GitHub</a></div>
+<div class="links"><a class="cv-download" href="assets/Tanvirul-Islam-Niloy-CV.pdf" download="Tanvirul-Islam-Niloy-CV.pdf">Download CV (PDF)</a><a href="mailto:niloytanvirulislam@gmail.com">Email</a><a href="https://www.linkedin.com/in/tanvirul-islam-niloy-4b432b2b1" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/tanvirniloy2000" target="_blank" rel="noopener noreferrer">GitHub</a></div>
 </header>
 
 <main class="w">
@@ -90,7 +104,6 @@ footer{padding:50px 0 40px;color:var(--mut);font-size:13px}
 
 <section id="projects">
 <h2>Featured projects</h2>
-
 <article class="proj">
 <h3>In-vehicle alcohol detection with Arduino</h3>
 <p class="tools">Arduino, <span class="fill">[alcohol gas sensor model]</span>, 10-bit ADC, <span class="fill">[buzzer / relay]</span>, serial monitor</p>
@@ -134,10 +147,10 @@ footer{padding:50px 0 40px;color:var(--mut);font-size:13px}
 
 <section id="contact">
 <h2>Contact</h2>
-<p>I’m open to junior network engineer, NOC and network support roles.</p>
-<div class="links"><a href="mailto:niloytanvirulislam@gmail.com">niloytanvirulislam@gmail.com</a><a href="https://www.linkedin.com/in/tanvirul-islam-niloy-4b432b2b1">linkedin.com/in/tanvirul-islam-niloy-4b432b2b1</a><a href="https://github.com/tanvirniloy2000">github.com/tanvirniloy2000</a></div>
+<p>I would be glad to work in a junior network engineer, NOC or network support role.</p>
+<div class="links"><a href="mailto:niloytanvirulislam@gmail.com">niloytanvirulislam@gmail.com</a><a href="https://www.linkedin.com/in/tanvirul-islam-niloy-4b432b2b1" target="_blank" rel="noopener noreferrer">linkedin.com/in/tanvirul-islam-niloy-4b432b2b1</a><a href="https://github.com/tanvirniloy2000" target="_blank" rel="noopener noreferrer">github.com/tanvirniloy2000</a></div>
 </section>
 </main>
-<footer class="w">© 2026 Tanvirul Islam Niloy</footer>
+<footer class="w">© All rights reserved 2026 Tanvirul Islam Niloy</footer>
 </body>
 </html>
