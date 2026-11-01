@@ -5,138 +5,77 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tanvirul Islam Niloy | Network Engineer & Researcher </title>
 <meta name="description" content=" network engineer. Cisco IOS, VLANs, subnetting, MikroTik, OLT configuration, Python. CCNA in progress.">
-<!-- Text in pink dashed [brackets] (class="fill") is a placeholder: replace or delete it before publishing. -->
-<style>
-:root{--bg:#0113105e;--panel:#4c505a;--line:#83b4a5;--tx:#dde5f2;--mut:#8a97ae;--acc:#6ea8ff;--up:#4ade80;--learn:#f5b84b;--fill:#ff8fa3;color-scheme:dark}
-@media(prefers-color-scheme:light){:root{--bg:#f5f7fb;--panel:#fff;--line:#d5dbe8;--tx:#18202f;--mut:#55627a;--acc:#1f5fd1;--up:#15803d;--learn:#a15c00;--fill:#c2264a;color-scheme:light}}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
-.w{max-width:900px;margin:0 auto;padding:0 22px}
-nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
-nav .w{display:flex;gap:22px;align-items:center;height:50px;overflow-x:auto;white-space:nowrap;font-size:14px}
-nav b{margin-right:auto;font-weight:600}
-nav a{color:var(--mut)}nav a:hover{color:var(--tx);text-decoration:none}
-section{padding:60px 0 0}
-h1{font-size:clamp(2.3rem,7vw,3.8rem);line-height:1.05;letter-spacing:-.03em;margin:0 0 18px}
-h2{font-size:1.6rem;letter-spacing:-.02em;margin:0 0 22px;padding-bottom:10px;border-bottom:1px solid var(--line)}
-h3{font-size:1.2rem;margin:0 0 4px;letter-spacing:-.01em}
-.lead{font-size:1.15rem;max-width:60ch}
-.mut{color:var(--mut)}
-.term{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px 20px;margin:28px 0;font:13.5px/1.75 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;overflow-x:auto}
-.term .m{color:var(--acc)}
-.links a{display:inline-block;border:1px solid var(--line);border-radius:6px;padding:8px 14px;margin:0 8px 8px 0;font-size:14px;color:var(--tx)}
-.links a:hover{border-color:var(--acc);text-decoration:none}
-.links a.cv-download{background:var(--acc);border-color:var(--acc);color:#081326;font-weight:700}
-.profile-head{display:flex;align-items:center;gap:22px;margin-bottom:18px}
-.profile-head h1{margin:0}
-.avatar-wrap{position:relative;flex:0 0 116px;width:116px;height:116px}
-.profile-photo,.avatar-fallback{display:block;width:116px;height:116px;border-radius:50%;border:3px solid var(--acc)}
-.profile-photo{object-fit:cover;object-position:center}
-.profile-photo[hidden],.avatar-fallback[hidden]{display:none!important}
-.avatar-fallback{display:grid;place-items:center;background:linear-gradient(140deg,#1d355b,#3468a6 58%,#6ea8ff);color:#fff;font-size:2rem;font-weight:750;letter-spacing:.04em}
-p{max-width:68ch}
-.tbl{overflow-x:auto}
-table{border-collapse:collapse;width:100%;min-width:680px;font-size:15px}
-th,td{text-align:left;vertical-align:top;padding:14px 16px 14px 0;border-bottom:1px solid var(--line)}
-th{font-weight:600;color:var(--mut);font-size:14px}
-td:first-child{font-weight:600;width:24%}
-ul.k{list-style:none;margin:0;padding:0}
-ul.k li{padding-left:18px;position:relative;margin-bottom:4px}
-ul.k li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--up)}
-ul.k.l li::before{background:var(--learn)}
-.proj{padding:6px 0 34px;border-bottom:1px solid var(--line);margin-bottom:34px}
-.proj:last-child{border:0}
-.tools{color:var(--mut);font-size:14px;margin:0 0 6px}
-dl{display:grid;grid-template-columns:92px 1fr;gap:12px 18px;margin:18px 0 0}
-dt{font-weight:700;color:var(--acc)}
-dd{margin:0;max-width:66ch}
-.lens{border-left:3px solid var(--acc);padding:4px 14px;margin:20px 0 0;color:var(--mut);font-size:.95rem;max-width:66ch}
-.fill{color:var(--fill);border-bottom:1px dashed var(--fill)}
-.badge{display:inline-block;font-size:13px;color:var(--learn);border:1px solid var(--learn);border-radius:99px;padding:1px 10px;margin-left:8px;vertical-align:middle;font-weight:400}
-footer{padding:50px 0 40px;color:var(--mut);font-size:13px}
-@media(max-width:560px){dl{grid-template-columns:1fr;gap:2px}dd{margin-bottom:12px}.profile-head{gap:14px}.avatar-wrap,.profile-photo,.avatar-fallback{width:84px;height:84px;flex-basis:84px}.profile-head h1{font-size:clamp(1.75rem,8vw,2.5rem)}}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<canvas id="bg" aria-hidden="true"></canvas><div id="pg"></div>
 <nav><div class="w"><b>Tanvirul Islam Niloy</b><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certs">Certifications</a><a href="#contact">Contact</a></div></nav>
 
-<header class="w" style="padding-top:72px">
-<div class="profile-head">
-  <div class="avatar-wrap">
-    <img class="profile-photo" src="assets/portfolio pic.jpeg" alt="Tanvirul Islam Niloy profile photo" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
-    <span class="avatar-fallback" hidden aria-hidden="true">TN</span>
+<header class="w hero">
+<div class="ph">
+  <div class="av">
+    <img src="assets/portfolio%20pic.jpeg" alt="Tanvirul Islam Niloy profile photo" onerror="if(!this.dataset.t){this.dataset.t=1;this.src='assets/portfolio%20pic.jpeg.jpeg'}else{this.hidden=true;this.nextElementSibling.hidden=false}">
+    <span class="fb" hidden aria-hidden="true">TN</span>
   </div>
   <h1>Tanvirul Islam Niloy</h1>
 </div>
-<section class="header"><p><b>|Network engineer & Researcher|</b></p>
-  Recently completed B.Sc. in Computer Science &amp; Engineering, Currently working in an ISP company named Antaranga Networks. CCNA in progress. I work through problems from the cable up, and practice on Cisco IOS, MikroTik RouterOS and OLT consoles.</section>
-
-<br><h2 class="skills-title">Specialized Skills</h2></br>
-<div><pre class="term" aria-label="Troubleshooting method">
- 1    OLT , server, mikrotik configuration 
- 2    MAC learned, VLAN allowed on trunk, STP forwarding
- 3    Programming languages (Python, Java, C, Flutter)Software development and debugging 
- 4    Cybersecurity principles,Networking & Troubleshooting 
- 5    DNS resolves, application responds 
- 6    Ping, traceroute, ARP and route-table inspection
- 7    Data analysis and visualization Python
-</pre>
-<div class="links"><a class="cv-download" href="assets/Tanvirul_Islam_Niloy_CV_new (1).pdf" download="Tanvirul_Islam_Niloy_CV_new (1).pdf">Download CV (PDF)</a><a href="mailto:niloytanvirulislam@gmail.com">Email</a><a href="https://www.linkedin.com/in/tanvirul-islam-niloy-4b432b2b1" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/tanvirniloy2000" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+<p class="role"><b>|</b>Network engineer &amp; Researcher<b>|</b></p>
+<p class="lead">Recently completed B.Sc. in Computer Science &amp; Engineering, Currently working in an ISP company named Antaranga Networks. CCNA in progress. I work through problems from the cable up, and practice on Cisco IOS, MikroTik RouterOS and OLT consoles.</p>
+<div class="links"><a class="cv" href="assets/Tanvirul_Islam_Niloy_CV_new%20(1).pdf" download="Tanvirul_Islam_Niloy_CV_new (1).pdf">Download CV (PDF)</a><a href="mailto:niloytanvirulislam@gmail.com">Email</a><a href="https://www.linkedin.com/in/tanvirul-islam-niloy-4b432b2b1" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/tanvirniloy2000" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+<section class="rv" style="padding-top:48px">
+<h2>Specialized Skills</h2>
+<div class="term"><div class="tb"><i></i><i></i><i></i></div><pre aria-label="Specialized skills"><span class="ln" style="--i:1"><i>1</i>OLT , server, mikrotik configuration</span><span class="ln" style="--i:2"><i>2</i>MAC learned, VLAN allowed on trunk, STP forwarding</span><span class="ln" style="--i:3"><i>3</i>Programming languages (Python, Java, C, Flutter)Software development and debugging</span><span class="ln" style="--i:4"><i>4</i>Cybersecurity principles,Networking &amp; Troubleshooting</span><span class="ln" style="--i:5"><i>5</i>DNS resolves, application responds</span><span class="ln" style="--i:6"><i>6</i>Ping, traceroute, ARP and route-table inspection</span><span class="ln" style="--i:7"><i>7</i>Data analysis and visualization Python</span></pre></div>
+</section>
 </header>
 
 <main class="w">
-<section id="about">
+<section id="about" class="rv">
 <h2>About</h2>
-This is Tanvirul Islam Niloy, a Computer Science and Engineering graduate from the University of Science & Technology Chittagong, based in Chattogram, Bangladesh. 
-I’m passionate about network engineering, software development, and cybersecurity.Currently, I work as a Support Engineer in Network Operations at Antaranga.com, gaining hands-on experience in OLT configuration, MikroTik administration, server management, and network troubleshooting.
-My technical interests also include Python, Java, C, Flutter, data analysis, and visualization. I developed an Arduino-based alcohol detection system for road safety and contributed to research on deep learning-based mobile breast cancer detection, presented at ECCE 2025.
-
-Currently pursuing CCNA to strengthen my routing and switching knowledge, I aspire to grow as a Junior Network Engineer or NOC Engineer, contributing to production networks while exploring network automation and emerging technologies.
+<p>This is Tanvirul Islam Niloy, a Computer Science and Engineering graduate from the University of Science &amp; Technology Chittagong, based in Chattogram, Bangladesh. I’m passionate about network engineering, software development, and cybersecurity.</p>
+<p>Currently, I work as a Support Engineer in Network Operations at Antaranga.com, gaining hands-on experience in OLT configuration, MikroTik administration, server management, and network troubleshooting.</p>
+<p>My technical interests also include Python, Java, C, Flutter, data analysis, and visualization. I developed an Arduino-based alcohol detection system for road safety and contributed to research on deep learning-based mobile breast cancer detection, presented at ECCE 2025.</p>
+<p>Currently pursuing CCNA to strengthen my routing and switching knowledge, I aspire to grow as a Junior Network Engineer or NOC Engineer, contributing to production networks while exploring network automation and emerging technologies.</p>
 </section>
 
-<section id="skills">
+<section id="skills" class="rv">
 <h2>Skills matrix</h2>
-<p class="mut" style="margin-top:0"><span style="color:var(--up)">●</span> working knowledge &nbsp; <span style="color:var(--learn)">●</span> actively studying on the CCNA track</p>
-<div class="tbl"><table>
-<tr><th>Area</th><th>Working knowledge</th><th>Studying</th></tr>
-<tr><td>Routing and switching (L2/L3)</td><td><ul class="k"><li>TCP/IP and subnetting, including VLSM</li><li>VLANs and 802.1Q trunks</li><li>Cisco IOS CLI</li><li>Layer 2 switching: MAC learning, access and trunk ports</li></ul></td><td><ul class="k l"><li>Inter-VLAN routing</li><li>OSPF, single area</li><li>STP and RSTP</li><li>EtherChannel</li></ul></td></tr>
-<tr><td>Network security and firewalls</td><td><ul class="k"><li>Basic network security</li></ul></td><td><ul class="k l"><li>Standard and extended ACLs</li><li>NAT and PAT</li><li>Port security, SSH hardening</li><li>RouterOS firewall filter rules</li></ul></td></tr>
-<tr><td>Automation and scripting</td><td><ul class="k"><li>Python for networking</li></ul></td><td><ul class="k l"><li>Netmiko and Paramiko</li><li>REST APIs and JSON</li><li>Bash</li></ul></td></tr>
-<tr><td>Monitoring and diagnostics</td><td><ul class="k"><li>ping, traceroute, ARP and route-table inspection</li><li>DHCP, DNS and ICMP behaviour</li></ul></td><td><ul class="k l"><li>Wireshark capture and display filters</li><li>SNMP</li><li>Syslog</li></ul></td></tr>
-<tr><td>Access network and hardware</td><td><ul class="k"><li>OLT configuration</li><li>MikroTik and router diagnosis</li><li>Physical infrastructure and hardware</li></ul></td><td><ul class="k l"><li>Optical power budgeting</li></ul></td></tr>
-</table></div>
+<p class="mut"><span style="color:var(--up)">●</span> working knowledge &nbsp; <span style="color:var(--learn)">●</span> actively studying on the CCNA track</p>
+<div class="grid">
+<div class="card rv" style="--d:0"><h3>Routing and switching (L2/L3)</h3><div class="cols"><div><small>Working knowledge</small><ul class="k"><li>TCP/IP and subnetting, including VLSM</li><li>VLANs and 802.1Q trunks</li><li>Cisco IOS CLI</li><li>Layer 2 switching: MAC learning, access and trunk ports</li></ul></div><div><small>Studying</small><ul class="k l"><li>Inter-VLAN routing</li><li>OSPF, single area</li><li>STP and RSTP</li><li>EtherChannel</li></ul></div></div></div>
+<div class="card rv" style="--d:1"><h3>Network security and firewalls</h3><div class="cols"><div><small>Working knowledge</small><ul class="k"><li>Basic network security</li></ul></div><div><small>Studying</small><ul class="k l"><li>Standard and extended ACLs</li><li>NAT and PAT</li><li>Port security, SSH hardening</li><li>RouterOS firewall filter rules</li></ul></div></div></div>
+<div class="card rv" style="--d:0"><h3>Automation and scripting</h3><div class="cols"><div><small>Working knowledge</small><ul class="k"><li>Python for networking</li></ul></div><div><small>Studying</small><ul class="k l"><li>Netmiko and Paramiko</li><li>REST APIs and JSON</li><li>Bash</li></ul></div></div></div>
+<div class="card rv" style="--d:1"><h3>Monitoring and diagnostics</h3><div class="cols"><div><small>Working knowledge</small><ul class="k"><li>ping, traceroute, ARP and route-table inspection</li><li>DHCP, DNS and ICMP behaviour</li></ul></div><div><small>Studying</small><ul class="k l"><li>Wireshark capture and display filters</li><li>SNMP</li><li>Syslog</li></ul></div></div></div>
+<div class="card rv" style="--d:0"><h3>Access network and hardware</h3><div class="cols"><div><small>Working knowledge</small><ul class="k"><li>OLT configuration</li><li>MikroTik and router diagnosis</li><li>Physical infrastructure and hardware</li></ul></div><div><small>Studying</small><ul class="k l"><li>Optical power budgeting</li></ul></div></div></div>
+</div>
 </section>
 
-<section id="projects">
+<section id="projects" class="rv">
 <h2>Featured projects</h2>
-<article class="proj">
+<article class="card proj rv">
 <h3>In-vehicle alcohol detection with Arduino</h3>
-<p class="tools">Arduino, <span class="null">alcohol gas sensor model</span>, 10-bit ADC, <span class="null">buzzer / relay</span>, serial monitor</p>
+<p class="tools">Arduino, alcohol gas sensor model, 10-bit ADC, buzzer / relay, serial monitor</p>
 <dl>
 <dt>Situation</dt><dd>Impaired driving is a major contributor to road crashes, and a check that does not depend on the driver’s honesty has to work on cheap, noisy hardware.</dd>
 <dt>Task</dt><dd>Build a sensing chain that samples breath alcohol, compares it with a calibrated threshold and drives an alert or cut-off output, without tripping on sensor noise.</dd>
 <dt>Action</dt><dd>Read the sensor through the Arduino’s analog input and measured clean-air and alcohol-exposure baselines to pick the threshold. Added a warm-up period, sample averaging and hysteresis to reject transient spikes. Isolated faults bottom-up: power rails, sensor warm-up, raw ADC counts on the serial monitor, decision logic, output stage.</dd>
-<dt>Result</dt><dd><span class="null">To not drive by alchoholic driver for this project , Improving this project , working on .</span></dd>
+<dt>Result</dt><dd>To not drive by alchoholic driver for this project , Improving this project , working on .</dd>
 </dl>
 <p class="lens"><b>Network lens.</b> Fault isolation here is the same layered method as network troubleshooting. Raw ADC counts are the equivalent of interface counters, and a baud-rate mismatch on the serial link produces garbage the way a duplex mismatch produces CRC errors.</p>
 </article>
 
-<article class="proj">
+<article class="card proj rv">
 <h3>Mobile health solution for breast cancer detection (deep learning)</h3>
-<p class="tools">Python, <span class="null">[TensorFlow / PyTorch]</span>, CNN <span class="null">[architecture or backbone]</span>, <span class="null">[mobile framework]</span></p>
+<p class="tools">Python, [TensorFlow / PyTorch], CNN [architecture or backbone], [mobile framework]</p>
 <dl>
 <dt>Situation</dt><dd>Access to specialist screening is limited, and a phone-based triage aid could widen early detection if it is accurate and fast enough to use.</dd>
 <dt>Task</dt><dd>Train an image classifier judged on clinically meaningful metrics and deliver its predictions through a mobile app.</dd>
-<dt>Action</dt><dd>Prepared the dataset <span class="null"><div=""></div></span> with resizing, normalisation and augmentation, and split train, validation and test sets by patient to avoid leakage. Trained the CNN and evaluated recall, precision, F1 and ROC-AUC rather than accuracy alone. Packaged the model for <span class="null">on-device inference / REST API</span>.</dd>
-<dt>Result</dt><dd><span class="null">Report sensitivity, specificity and AUC on the held-out test set, plus app latency.</span></dd>
+<dt>Action</dt><dd>Prepared the dataset with resizing, normalisation and augmentation, and split train, validation and test sets by patient to avoid leakage. Trained the CNN and evaluated recall, precision, F1 and ROC-AUC rather than accuracy alone. Packaged the model for on-device inference / REST API.</dd>
+<dt>Result</dt><dd>Report sensitivity, specificity and AUC on the held-out test set, plus app latency.</dd>
 </dl>
 <p class="lens"><b>Network lens.</b> If inference runs remotely, the design depends on upload payload size, TLS handshake cost and round-trip time over weak mobile links. On-device inference trades model size for independence from the network. I can defend either choice with numbers.</p>
 </article>
 
-<article class="proj">
+<article class="card proj rv">
 <h3>Campus-style VLAN lab <span class="badge">in progress</span></h3>
 <p class="tools">Cisco Packet Tracer or GNS3, Cisco IOS</p>
 <dl>
@@ -147,18 +86,19 @@ Currently pursuing CCNA to strengthen my routing and switching knowledge, I aspi
 </article>
 </section>
 
-<section id="certs">
+<section id="certs" class="rv">
 <h2>Certifications and participation</h2>
-<ul class="k l" style="margin-bottom:8px"><li>CCNA, in progress</li></ul>
-<ul class="k"><li>Certificate of participation, Project Exhibition Spring 2022, organised by the Dept. of CSE and the FSET Research Club, USTC</li><li>Certificate of contribution, ECCE 2025</li></ul>
+<div class="card"><ul class="k l" style="margin-bottom:8px"><li>CCNA, in progress</li></ul>
+<ul class="k"><li>Certificate of participation, Project Exhibition Spring 2022, organised by the Dept. of CSE and the FSET Research Club, USTC</li><li>Certificate of contribution, ECCE 2025</li></ul></div>
 </section>
 
-<section id="contact">
+<section id="contact" class="rv">
 <h2>Contact</h2>
 <p>I would be glad to work in a junior network engineer, NOC or network support role.</p>
 <div class="links"><a href="mailto:niloytanvirulislam@gmail.com">niloytanvirulislam@gmail.com</a><a href="https://www.linkedin.com/in/tanvirul-islam-niloy-4b432b2b1" target="_blank" rel="noopener noreferrer">linkedin.com/in/tanvirul-islam-niloy-4b432b2b1</a><a href="https://github.com/tanvirniloy2000" target="_blank" rel="noopener noreferrer">github.com/tanvirniloy2000</a></div>
 </section>
 </main>
 <footer class="w">©All rights reserved 2026 Tanvirul Islam Niloy </footer>
+<script src="script.js"></script>
 </body>
 </html>
